@@ -40,11 +40,15 @@ class _TrackerPageState extends State<TrackerPage> {
                   stream: tracker.fireStoreStream(c.id.trim()),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
+                      String cryptoChoice =
+                          snapshot.data.data()['cryptoChoice'];
+                      String cryptoValue = snapshot.data.data()['cryptoValue'];
+                      String fiatChoice = snapshot.data.data()['fiatChoice'];
+                      String message = cryptoValue.contains('API Error')
+                          ? "1 $cryptoChoice = $cryptoValue $fiatChoice"
+                          : 'API Error';
                       return textValue(
-                          "1 ${snapshot.data.data()['cryptoChoice']} = ${snapshot.data.data()['cryptoValue']} ${snapshot.data.data()['fiatChoice']}",
-                          Colors.black,
-                          FontWeight.bold,
-                          18);
+                          message, Colors.black, FontWeight.bold, 18);
                     } else if (snapshot.hasError) {
                       textValue("An error has occurred", Colors.black,
                           FontWeight.bold, 18);

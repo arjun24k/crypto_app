@@ -5,7 +5,10 @@ import 'dart:convert';
 
 Future<Currency> getCryptoData(String cryptoChoice, String fiatChoice) async {
   var url = 'https://rest.coinapi.io/v1/exchangerate/$cryptoChoice/$fiatChoice';
-  Map<String, String> headers = {'X-CoinAPI-Key': '<YOUR API KEY>'};
+  Map<String, String> headers = {
+    'X-CoinAPI-Key':
+        '7693F9EC-E18F-43BD-8EB8-16C39A6A492C' //'90352D77-446F-453A-A47C-7F85798BE6A4'
+  };
   http.Response response = await http.get(url, headers: headers);
   var parsedJson = jsonDecode(response.body);
   print(parsedJson);
