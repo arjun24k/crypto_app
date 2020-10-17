@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "988367875971",
+    "firebase_url": "https://tesst-c05f1.firebaseio.com",
+    "project_id": "tesst-c05f1",
+    "storage_bucket": "tesst-c05f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988367875971:android:0d481cd3ff1065c67f10b6",
+        "android_client_info": {
+          "package_name": "com.example.crypto_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988367875971-66fhvoo7343hf3rldto7lpvkk71oqsf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuXmiZjOzvRQnjZMac2iSbuIMnaJwzJxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988367875971-66fhvoo7343hf3rldto7lpvkk71oqsf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
